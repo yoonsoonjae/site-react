@@ -16,8 +16,7 @@ const Header = () => {
                     <h1>
                         <a href="/">portfolio<em>react.js</em></a>
                     </h1>
-                </div>
-                <nav 
+                    <nav 
                     className={`header__nav ${show ? "show" : ""}`} 
                     role="navigation" 
                     aria-label="메인메뉴"
@@ -40,6 +39,7 @@ const Header = () => {
                     onClick={toggleMenu}
                 >
                     <span></span>
+                </div>
                 </div>
             </div>
         </header>

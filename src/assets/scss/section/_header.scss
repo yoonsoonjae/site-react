@@ -4,15 +4,16 @@
 }
 .header__inner {
     @include flex-between;
+    justify-content: center; // 중앙 정렬 추가
     background-color: rgba(116, 99, 99, 0.1);
     backdrop-filter: blur(15px);
     padding: 1rem;
 
     .header__logo {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         text-align: center;
         text-transform: uppercase;
-        line-height: 1;
+        line-height: 1.5;
 
         em {
             font-size: 10px;
@@ -24,7 +25,8 @@
     .header__nav {
 
         @media (max-width: 800px){
-            display: none;
+        display: flex; // 플렉스 박스 사용
+        justify-content: center; // 중앙 정렬
 
             &.show {
                 display: block;
